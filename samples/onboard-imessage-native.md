@@ -18,7 +18,8 @@ Edit corporate phone number provisioning.
 Activate user’s messaging identities (AM users & admins).
 Deactivate user’s messaging identity (AM users & admins).
 Request Mac machines set up exclusively for self-onboarding.
-Enable iMessage Native self-onboarding on the Org Admin portal (Company Settings > Feature Configurations > com.leapxpert.imessage_native.self-onboarding).
+Enable iMessage Native self-onboarding on the Org Admin portal (Company Settings > Feature Configurations > com.leapxpert.imessage_native.self-onboarding). <img width="623" height="265" alt="image" src="https://github.com/user-attachments/assets/9ebb4add-5870-4773-ba8b-5113580ffa93" />
+
 For AM users
 Double-check Apple ID details.
 Set up iCloud for Messages, Keychain and Contacts. For more information, check Prepare your iPhone and iMessage account: A step-by-step guide.
