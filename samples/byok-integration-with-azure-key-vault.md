@@ -8,7 +8,7 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 
 ## Before you start
 
-- Review the BYOK concept and how it works within the LeapXpert platform. See: [**Configure Bring Your Own Key (BYOK) protection** (internal link).
+- Review the BYOK concept and how it works within the LeapXpert platform. See: **Configure Bring Your Own Key (BYOK) protection** (internal link).
 - To enable authentication, understand how to generate certificates from the LeapXpert Admin Portal. See: **Generate certificate credential keys for Microsoft Entra ID app registration** (internal link)  
   *The certificate generation step is required before proceeding.*
 
@@ -22,21 +22,21 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 ### Create an App Registration in Entra ID (2)
 
 1. Log in to **Microsoft Entra Admin Center**.
-2. Go to **App registrations**.
-3. Click **+ New registration**.
+2. Go to **App registrations**. ![Alt text](photos/byok.png)
+3. Click **+ New registration**. ![Alt text](photos/byok1.png)
 4. Fill in:
    - **Name**: e.g., `KeyVaultAccessApp`
    - **Supported account types**: *Accounts in this organizational directory only* (Single tenant)
    - **Redirect URI**: Leave blank (or set if required by your app)
-5. Click **Register**.
-6. Copy the **Application (Client) ID** and **Directory (Tenant) ID** for later use.
+5. Click **Register**. ![Alt text](photos/byok2.png)
+6. Copy the **Application (Client) ID** and **Directory (Tenant) ID** for later use.![Alt text](photos/byok3.png)
 7. Go to **Certificates & secrets** and choose **one** of the following:
 
 #### Option 1: Authenticate App using **Certificates** 
 
-- Under **Certificates**, click **Upload certificate** (or **Update certificate**).
+- Under **Certificates**, click **Upload certificate** (or **Update certificate**). ![Alt text](photos/byok4.png)
 - Click **Select file** and upload the certificate downloaded from the **LeapXpert Org Admin portal**.
-- (Optional) Enter a description.
+- (Optional) Enter a description. ![Alt text](photos/byok5git.png)
 - Click **Add**.
 
 #### Option 2: Authenticate App using **Client secrets**
