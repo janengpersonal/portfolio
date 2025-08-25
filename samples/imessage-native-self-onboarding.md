@@ -1,3 +1,4 @@
+# Self-Onboarding iMessage Native for Managed Apple ID with Okta (Email and Password and Okta Verify Push authentication method)
 With LeapXpert platform, admins can send email instructions directly to assigned Users to help them self-onboard their iMessage accounts for message archiving. 
 
 From version **2.3.2** onwards, users who use Managed Apple ID federated with Okta can self-onboard iMessage accounts. Users can verify their accounts with two authentication methods:
@@ -45,7 +46,7 @@ Important:
     
 *   Set up iCloud for Messages, Keychain and Contacts. For more information, check [Prepare your iPhone and iMessage account: A step-by-step guide.](https://support.leap.expert/en/support/solutions/articles/151000192023)
     
-*   Use desktop browser for self-onboarding (highly recommended).
+*   Use desktop browser for self-onboarding (highly recommended).![alt text](image.png)
     
 
 Note: Those practices ensure a frictionless self-onboarding process.
@@ -94,39 +95,39 @@ Once the user has successfully linked their iMessage account, you can see the iM
 
 *   Sign in to iMessage with your Apple account.
     
-*   Once received the email instruction (screenshot), click Preparations before linking iMessage account to access a guide for next steps.
+*   Once received the email instruction (screenshot), click Preparations before linking iMessage account to access a guide for next steps.![alt text](image-1.png)
     
 
 *   Once the users have gone through the information on this page, close it and get back to the instruction email.
     
 *   Click Link Your iMessage Account button to get started.
     
-*   Enter the 6-digit code sent to the above phone number via SMS to verify your phone number.
+*   Enter the 6-digit code sent to the above phone number via SMS to verify your phone number.![alt text](image-2.png)
     
 
 Note: From the version 2.3.0 onwards, users can receive OTP via email. To enable sending OTP via email, admins go to Company Settings > Feature Configurations > Native Channels. Search for the "Authentication method for iMessage Native: AM self-onboarding", select Edit, choose Send OTP via Email from the dropdown list. Click Save.
 
-*   Select Log in via SSO to authenticate your account if your company has enabled SSO authentication. To enable the SSO authentication, see [Enable SSO authentication for iMessage Native self-onboarding](https://support.leap.expert/en/support/solutions/articles/151000171953)
+*   Select Log in via SSO to authenticate your account if your company has enabled SSO authentication. To enable the SSO authentication, see [Enable SSO authentication for iMessage Native self-onboarding](https://support.leap.expert/en/support/solutions/articles/151000171953) ![alt text](image-3.png)
     
-*   Enter the Apple ID credentials to your iMessage account.
+*   Enter the Apple ID credentials to your iMessage account.![alt text](image-4.png)
     
-*   After successfully submitting your Apple ID email and password, check your Okta Verify app and Approve the login request.
+*   After successfully submitting your Apple ID email and password, check your Okta Verify app and Approve the login request.![alt text](image-5.png)
     
-*   You will be asked for your Apple device unlock passcode as part of the Apple safety protections. Enter the passcode and complete this process.
+*   You will be asked for your Apple device unlock passcode as part of the Apple safety protections. Enter the passcode and complete this process.![alt text](image-6.png)
     
 *   Wait for a few minutes so that we can complete the setup on LeapXpert archiving device.
     
-*   You will be prompted to Turn on Text Message Forwarding for LeapXpert archiving device.
+*   You will be prompted to Turn on Text Message Forwarding for LeapXpert archiving device.![alt text](image-7.png)
     
-*   From LeapXpert version 2.6.0 onwards, the Complete button can be disabled in a specified period of time based on the configuration.     - To configure this, admins go to Company Settings > Feature Configurations > search "Set countdown timer for the Complete button". The acceptable value range is from 0 to 90 (seconds).
+*   From LeapXpert version 2.6.0 onwards, the Complete button can be disabled in a specified period of time based on the configuration.  ![alt text](image-8.png)   - To configure this, admins go to Company Settings > Feature Configurations > search "Set countdown timer for the Complete button". The acceptable value range is from 0 to 90 (seconds).![alt text](image-9.png)
     
-*   At this step, on your own device, you encounter the "Device Added to Your Account" popup. This is Apple safety feature when your account is used on other devices. Tap OK to dismiss this popup. If you want to understand more about this Apple mechanism, tap Settings to review the list of signed in devices. For more information, see also [Check your Apple Account device list to find where you're signed in](https://support.apple.com/en-vn/102649).Note: Do not remove the LeapXpert archiving machine from the list since it will unlink you from the iMessage Native. You need to integrate again to resume the message archiving.
+*   At this step, on your own device, you encounter the "Device Added to Your Account" popup. ![alt text](image-10.png).This is Apple safety feature when your account is used on other devices. Tap OK to dismiss this popup. If you want to understand more about this Apple mechanism, tap Settings to review the list of signed in devices. For more information, see also [Check your Apple Account device list to find where you're signed in](https://support.apple.com/en-vn/102649).Note: Do not remove the LeapXpert archiving machine from the list since it will unlink you from the iMessage Native. You need to integrate again to resume the message archiving.
     
-*   Below screenshots will show you how to enable Text Message Forwarding for LeapXpert capturing device from your iPhone: Note: If you're not seeing Text Message Forwarding option, try turning off the iMessage toggle and then turning it back on again. Wait for a few seconds for Apple to reactivate iMessage, and the Text Message Forwarding option should appear.
+*   Below screenshots will show you how to enable Text Message Forwarding for LeapXpert capturing device from your iPhone: ![alt text](image-11.png) Note: If you're not seeing Text Message Forwarding option, try turning off the iMessage toggle and then turning it back on again. Wait for a few seconds for Apple to reactivate iMessage, and the Text Message Forwarding option should appear.
     
-*   Apple will ask for a 6-digit code to confirm this action:
+*   Apple will ask for a 6-digit code to confirm this action:![alt text](image-12.png)
     
-*   Less than a minute, you will see the code on the self-onboarding webpage as following:
+*   Less than a minute, you will see the code on the self-onboarding webpage as following: ![alt text](image-13.png)
     
 *   As soon as you see the code, enter it on your iPhone and tap Allow to complete this action.It may take you a few minutes to see the code. If you don't see the code after 1 minute, tap Cancel on your iPhone and try to enable Text Message Forwarding again.After you've enabled Text Message Forwarding for the LeapXpert capturing device, click the Complete button on the self-onboarding webpage to finish linking your iMessage account. This will let us know you've completed the necessary steps and allow us to prepare for the next user who needs to link their iMessage account.
     
@@ -138,9 +139,9 @@ Note: From the version 2.3.0 onwards, users can receive OTP via email. To enable
         
     *   Click View integrations at the corporate phone number you want to unlink iMessage Native integration.
         
-    *   The Corporate Phone Number Integration dialog opens, click Unlink.
+    *   The Corporate Phone Number Integration dialog opens, click Unlink.![alt text](image-14.png)
         
-    *   The Unlink iOS SMS and iMessage native dialog opens, click **Unlink** to confirm the deactivating process.
+    *   The Unlink iOS SMS and iMessage native dialog opens, click **Unlink** to confirm the deactivating process. ![alt text](image-15.png)
         
     *   From LeapXpert version 2.1.0 onwards, you can unlink iMessage in two ways:
         
@@ -150,7 +151,7 @@ Note: From the version 2.3.0 onwards, users can receive OTP via email. To enable
             
 *   Note: Pending unlink request cannot be canceled.Upon receiving the unlink request, the system will proceed· to perform the unlink for the selected Corporate Phone Number. Once done, the iMessage integration status is marked **Unlink by admin** on both the **Corporate Phone Number** page and **Health check report.**
     
-    *   From User's iPhone; open Settings > Apple ID > scroll down to the bottom of Apple ID settings, and select LeapXpert capturing device. Tap "Remove from Account" to remove LeapXpert capturing device from the Apple ID account.
+    *   From User's iPhone; open Settings > Apple ID > scroll down to the bottom of Apple ID settings, and select LeapXpert capturing device. Tap "Remove from Account" to remove LeapXpert capturing device from the Apple ID account.![alt text](image-16.png)
         
     *   From version 2.4.0 onwards, the system will automatically conduct the clean up process. For other versions, you need to submit a ticket for the LeapXpert team to wipe data on the capturing device.
         
