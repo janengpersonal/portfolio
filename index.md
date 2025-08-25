@@ -8,4 +8,4 @@ Here you can find samples of my writing for different SaaS companies.
 - [Sample 2](doc2.md)
   
 **Explanation** 
-- [About External Companies](about-external-companies.md)
+- [About External Companies](samples/about-external-companies.md)
