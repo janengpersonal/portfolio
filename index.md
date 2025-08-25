@@ -1,7 +1,7 @@
 
-# Welcome to my Writing Portfolio
+# Welcome to Jane's Writing Portfolio
 
-This site contains my writing samples and documentation projects.
+Here you can find samples of my writing for different SaaS companies.
 
 - [About Me](about.md)
 - [Sample 1](doc1.md)
