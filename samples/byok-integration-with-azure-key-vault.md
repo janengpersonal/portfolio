@@ -8,8 +8,8 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 
 ## Before you start
 
-- Review the BYOK concept and how it works within the LeapXpert platform. See: **Configure Bring Your Own Key (BYOK) protection**.
-- To enable authentication, understand how to generate certificates from the LeapXpert Admin Portal. See: **Generate certificate credential keys for Microsoft Entra ID app registration**.  
+- Review the BYOK concept and how it works within the LeapXpert platform. See: [**Configure Bring Your Own Key (BYOK) protection** (internal link).
+- To enable authentication, understand how to generate certificates from the LeapXpert Admin Portal. See: **Generate certificate credential keys for Microsoft Entra ID app registration** (internal link)  
   *The certificate generation step is required before proceeding.*
 
 > **Note**  
