@@ -9,3 +9,4 @@ Here you can find samples of my writing for different SaaS companies.
   
 **Explanation** 
 - [About External Companies](samples/about-external-companies.md)
+- [About Official Accounts](samples/about-official-accounts.md)
