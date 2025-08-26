@@ -5,7 +5,7 @@ theme: jekyll-theme-dinky
 # Navigation menu
 nav:
   - name: "Home"
-    link: https://janengpersonal.github.io/portfolio/
+    link: /
   - name: "Docs"
     link: /samples/
   - name: "About"
