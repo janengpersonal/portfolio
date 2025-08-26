@@ -1,6 +1,9 @@
 title: "Jane Thao Nguyen"
 description: "Writing Portfolio"
-theme: jekyll-theme-dinky 
+theme: jekyll-theme-dinky
+url: "https://janengpersonal.github.io"
+baseurl: "/portfolio"
+
 
 # Navigation menu
 nav:
