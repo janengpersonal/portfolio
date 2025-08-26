@@ -4,7 +4,7 @@ This document highlights features that are currently supported in Signal Governe
 
 | Icon | Description |
 |------|-------------|
-| <img src="photos/signal04.png" alt="Alt text" width="20"/>| Support |
+| <img src="photos/signal08.png" alt="Alt text" width="40"/>| Support |
 | <img src="photos/signal05.png" alt="Alt text" width="25"/>| Currently not supported |
 |<img src="photos/signal06.png" alt="Alt text" width="22"/>| Supported but with known issue/limitation |  |
 | N/A | Not available due to channel limitations |
