@@ -10,7 +10,7 @@ This article provides instructions on how to **create, configure, and edit Sched
 ## Before You Start
 
 - You must be using **LeapXpert version 2.2.0 onwards**.  
-- The company admin must have the following permissions:  
+- The company admin must have the following permissions: ![Alt text](photos/scheduled-report01.png)
   - All permissions under **Admin - Scheduled reports**.
 
 ---
@@ -89,26 +89,27 @@ To configure a scheduled email/FTP report:
 2. Navigate to **Provisioning > Alerts & Reports > Scheduled Reports**.  
 3. Select **Create Scheduled Report**.  
 4. The **Create Scheduled Report** dialog opens.  
-   > From version **2.4.1 onwards**, the *Activated toggle* defaults to **ON** (no need to enable manually).  
-5. In the **Schedule report** tab, configure:
+> From version **2.4.1 onwards**, the *Activated toggle* defaults to **ON** (no need to enable manually).  
+5. In the **Schedule report** tab, configure: ![Alt text](photos/scheduled-report02.png)
    - **Task name**: name of the task.  
-   - **Report type**: select from [Available types](#available-scheduled-report-types).  
+   - **Report type**: select from [Available types](#available-scheduled-report-types). 
    - **Select channels**: choose channels to extract data.  
-   - **Select the schedule**: configure intervals (see [Available intervals](#available-intervals)).  
-6. Click **Next** to configure recipients.  
+   - **Select the schedule**: configure intervals (see [Available intervals](#available-intervals)).![Alt text](photos/scheduled-report03.png)  
+6. Click **Next** to configure recipients.   
 7. In the **Configure recipients** tab, choose methods:
    - **Email to admin**: enter recipient’s email(s). Use the trash icon to remove addresses.  
    - **FTP server** (only for Native channel status reports): provide:
      - Host & Port  
      - Transport: SFTP or FTP  
      - Authentication: Username/password  
-     - Proxy (optional)  
+     - Proxy (optional). Input credentials for the above methods for server authentication and connectivity. Disable the method that does not apply to you. ![Alt text](photos/scheduled-report04.png)  
+
 8. Enter credentials for authentication and connectivity.  
 9. Click **Save**.  
 
 ✅ You have successfully created a Scheduled Report.  
 
-> From version **2.4.1**, the **company (tenant) name** is displayed in the email content and `.csv` file.  
+> From version **2.4.1**, the **company (tenant) name** is displayed in the email content and `.csv` file.   ![Alt text](photos/scheduled-report05.png) 
 
 ---
 
@@ -121,7 +122,7 @@ To edit:
 1. Sign in to **Organization Admin**.  
 2. Go to **Provisioning > Alerts & Reports > Scheduled Reports**.  
 3. Select **Edit** (pencil icon) for the report.  
-4. Update fields as required.  
+4. Update fields as required. ![Alt text](photos/scheduled-report06.png)  
 5. Click **Save**.  
 
 ---
@@ -129,7 +130,9 @@ To edit:
 ## Download and View Reports
 
 - When receiving a report email, users must log in to the Org Admin portal to download.  
-- Downloading requires appropriate **permissions**. Without them, users will see an **error message**.  
+- Downloading requires appropriate **permissions**. ![Alt text](photos/scheduled-report07.png) 
+![Alt text](photos/scheduled-report08.png) 
+-  Without them, users will see an **error message**. ![Alt text](photos/scheduled-report09.png) 
 - When we upgrade your environment to version **2.3.1**, a role `scheduled-reports.viewer` will be automatically created and assigned to users whose email addresses are configured as recipients of any scheduled reports. The role consists of following permissions that allow users to download reports. 
 All those permissions are included in the Admin - Scheduled reports permission.
 
