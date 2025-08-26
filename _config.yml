@@ -1,3 +1,11 @@
 title: "Jane Thao Nguyen"
 description: "Writing Portfolio"
-theme: jekyll-theme-lanyon
+# Theme
+remote_theme: poole/lanyon
+plugins:
+  - jekyll-remote-theme
+
+# Optional settings
+paginate: 5
+paginate_path: "page:num"
+markdown: kramdown
