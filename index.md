@@ -9,6 +9,9 @@ Here you can find samples of my writing for different SaaS companies.
   
 **How-to**
 - [Step-by-Step Guide: BYOK Integration with Azure Key Vault](samples/byok-integration-with-azure-key-vault.md)
+
+**Tutorials**
+- [Create a Scheduled Report](samples/create-a-scheduled-report.md)
   
 **Explanation** 
 - [About External Companies](samples/about-external-companies.md)
