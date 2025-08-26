@@ -1,7 +1,4 @@
 title: "Jane Thao Nguyen"
 description: "Writing Portfolio"
-url: "https://janengpersonal.github.io/portfolio"
-remote_theme: poole/lanyon
-plugins:
-  - jekyll-remote-theme
+theme: jekyll-theme-dinky 
 
