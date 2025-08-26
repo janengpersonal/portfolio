@@ -9,7 +9,7 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 ## Before you start
 
 - Review the BYOK concept and how it works within the LeapXpert platform. See: **Configure Bring Your Own Key (BYOK) protection** (internal link).
-- To enable authentication, understand how to generate certificates from the LeapXpert Admin Portal. See: **Generate certificate credential keys for Microsoft Entra ID app registration** (internal link)  
+- To enable authentication, understand how to generate certificates from the LeapXpert Admin Portal. See: **Generate certificate credential keys for Microsoft Entra ID app registration** (internal link).
   *The certificate generation step is required before proceeding.*
 
 > **Note**  
@@ -36,16 +36,16 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 
 - Under **Certificates**, click **Upload certificate** (or **Update certificate**). ![Alt text](photos/byok4.png)
 - Click **Select file** and upload the certificate downloaded from the **LeapXpert Org Admin portal**.
-- (Optional) Enter a description. ![Alt text](photos/byok5git.png)
+- (Optional) Enter a description. ![Alt text](photos/byok5.png)
 - Click **Add**.
 
 #### Option 2: Authenticate App using **Client secrets**
 
 - Go to **Certificates & secrets**.
-- Click **Client secrets** > **+ New client secret**.
-- Enter a description and select an expiration period.
+- Click **Client secrets** > **+ New client secret**. ![Alt text](photos/byok6.png)
+- Enter a description and select an expiration period. ![Alt text](photos/byok7.png)
 - Click **Add**.
-- Copy the Value of the secret (you’ll use it for authentication).
+- Copy the Value of the secret (you’ll use it for authentication). ![Alt text](photos/byok8.png)
 
 > **Recommendation**  
 > Use **Option 1 (Certificates)** to authenticate the App Registration.
@@ -55,17 +55,17 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 ### Create an Azure Key Vault
 
 1. Log in to the **Azure Portal**.
-2. Select **Key vaults**.
-3. Click **+ Create**.
+2. Select **Key vaults**. ![Alt text](photos/byok9.png)
+3. Click **+ Create**. ![Alt text](photos/byok10.png)
 4. Fill in the required details:
-   - **Subscription**: Choose your subscription
-   - **Resource Group**: Select or **Create new**
-   - **Key Vault Name**: e.g., `leapvault01` (must be globally unique)
-   - **Region**: Select your region
+   - **Subscription**: Choose your subscription.
+   - **Resource Group**: Select or **Create new**. ![Alt text](photos/byok11.png)
+   - **Key Vault Name**: e.g., `leapvault01` (must be globally unique). ![Alt text](photos/byok12.png)
+   - **Region**: Select your region.
 5. **Enable Soft-delete and Purge Protection**:
    - **Soft Delete**: Ensure it is enabled. This ensures deleted keys can be recovered within the retention period.
-   - **Retention Period**: 90 days (default)
-   - **Purge Protection**: Enable purge protection to prevent permanent deletion before the retention period ends. 
+   - **Retention Period**: 90 days (default).
+   - **Purge Protection**: Enable purge protection to prevent permanent deletion before the retention period ends. ![Alt text](photos/byok13.png)
 6. Click **Review + Create**, then **Create**.
 
 > **Note**  
@@ -75,15 +75,15 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 
 ### Create a custom role for Key Vault operations
 
-1. In the **Azure Portal**, navigate to the **Resource Group** that contains your Key Vault.
+1. In the **Azure Portal**, navigate to the **Resource Group** that contains your Key Vault. ![Alt text](photos/byok14.png)
 2. Click **Access control (IAM)**.
-3. Click **Add**.
-4. Click  **Add custom role**.
-5. Enter a **Custom role name** and select **Start from scratch**.
-6. Open the **Permissions** tab and click **Add permissions**.
+3. Click **Add**. ![Alt text](photos/byok15.png)
+4. Click  **Add custom role**. ![Alt text](photos/byok16.png)
+5. Enter a **Custom role name** and select **Start from scratch**. ![Alt text](photos/byok17.png)
+6. Open the **Permissions** tab and click **Add permissions**. ![Alt text](photos/byok18.png)
 7. Search for the following permissions and add them:
-   - `Microsoft.KeyVault/vaults/keys/read` *(Actions)*
-   - Click **Add**.
+   - `Microsoft.KeyVault/vaults/keys/read` *(Actions)* ![Alt text](photos/byok19.png)
+   - Click **Add**. ![Alt text](photos/byok20.png)
    - Under **Data actions**, repeat the above steps to those permissions:
      - `Microsoft.KeyVault/vaults/keys/read`
      - `Microsoft.KeyVault/vaults/keys/encrypt/action`
@@ -95,27 +95,29 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 ### Create role assignment to Key Vault
 
 1. In your Key Vault, go to **Access control (IAM)**. 
-2. Select **Role assignments**.
-3. Click **+ Add** > **Add role assignment**.
-4. In **Role**, select the **custom role** you created.
+2. Select **Role assignments**. ![Alt text](photos/byok21.png)
+3. Click **+ Add** > **Add role assignment**. ![Alt text](photos/byok22.png)
+4. In **Role**, select the **custom role** you created. ![Alt text](photos/byok23.png)
 5. Click **Next**.
-6. In the **Members** field, next to **Assign access to**, select **User, group, or service principal**.
-7. Click **+ Select members** and choose the **App Registration** you created earlier.
-8. Click **Select** > **Next** > **Review + assign**.
+6. In the **Members** field, next to **Assign access to**, select **User, group, or service principal**. ![Alt text](photos/byok24.png)
+7. Click **+ Select members** and choose the **App Registration** you created earlier (2). ![Alt text](photos/byok25.png)
+8. Click **Select**. ![Alt text](photos/byok26.png)
+9. Click **Next**.  ![Alt text](photos/byok27.png)
+10. Click **Review + assign**.
 
 ---
 
 ### Create a Key
 
-1. In **Azure Portal** > **Key vaults**, select your Key Vault.
-2. In the left navigation, go to **Objects** > **Keys**.
-3. Click **+ Generate/Import**.
-4. Select **Generate** from the dropdown list. 
-5. Enter a **Key name**.
+1. In **Azure Portal** > **Key vaults**, select your Key Vault. ![Alt text](photos/byok28.png)
+2. In the left navigation, go to **Objects** > **Keys**. ![Alt text](photos/byok29.png)
+3. Click **+ Generate/Import**. ![Alt text](photos/byok30.png)
+4. Select **Generate** from the dropdown list. ![Alt text](photos/byok31.png)
+5. Enter a **Key name**.  ![Alt text](photos/byok32.png)
 6. Configure:
-   - **Key type**: `RSA`
-   - **Key size**: `4096` *(recommended)*
-   - **Activation/Expiration dates**: Optional
+   - **Key type**: `RSA`.
+   - **Key size**: `4096` *(recommended)*.
+   - **Activation/Expiration dates**: Optional.
 7. Click **Create**.
 8. Copy the **Key Identifier (URI)** in the format:
    `https://<key-vault-name>.vault.azure.net/keys/<key-name>/<key-version>`
@@ -139,9 +141,9 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 **Configure in LeapXpert:**
 
 1. Log in to the **LeapXpert Org Admin portal**.
-2. Go to **Provisioning > Security & Access > Encryption**.
+2. Go to **Provisioning > Security & Access > Encryption**. ![Alt text](photos/byok33.png)
 3. Click **+ Create New Key**.
-4. In **Create a customer managed key**, enter **Name** and (optional) **Description**.
+4. In **Create a customer managed key**, enter **Name** and (optional) **Description**. ![Alt text](photos/byok34.png)
 5. Select **Azure Key Vault** and fill in:
    - **Key name**
    - **Vault URL**
@@ -178,8 +180,8 @@ This guide provides step-by-step instructions for configuring Azure Key Vault, c
 LeapXpert will use this information to initiate the **Private Link connection**.
 5. Once LeapXpert finishes the process, log in to your **Azure Portal**.  
    - Go to your **Key Vault**.  
-   - Under **Settings**, click **Networking**.  
-   - Choose **Private Endpoint Connections**.  
+   - Under **Settings**, click **Networking**. ![Alt text](photos/byok35.png) 
+   - Choose **Private Endpoint Connections**. ![Alt text](photos/byok36.png) 
    - You will see a **pending request** from LeapXpert.  
    - Click it and **approve the request**.  
 
@@ -197,9 +199,9 @@ LeapXpert will use this information to initiate the **Private Link connection**.
 | Client Secret       | *(Optional, if you’re using it)*                               |
 
 7. Log in to the **LeapXpert Org Admin portal**.  
-1. Go to **Provisioning > Security & Access > Encryption**.  
+1. Go to **Provisioning > Security & Access > Encryption**. ![Alt text](photos/byok37.png) 
 2. Click **+ Create New Key**.  
-3. Select **Azure Key Vault** and fill in the values from the table above.  
+3. Select **Azure Key Vault** and fill in the values from the table above. ![Alt text](photos/byok38.png) 
 4. Click **Create**.  
 5. Click **Enable BYOK**.  
 
