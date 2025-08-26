@@ -1,11 +1,7 @@
 title: "Jane Thao Nguyen"
 description: "Writing Portfolio"
-# Theme
+url: "https://janengpersonal.github.io/portfolio"
 remote_theme: poole/lanyon
 plugins:
   - jekyll-remote-theme
 
-# Optional settings
-paginate: 5
-paginate_path: "page:num"
-markdown: kramdown
