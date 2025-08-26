@@ -2,3 +2,12 @@ title: "Jane Thao Nguyen"
 description: "Writing Portfolio"
 theme: jekyll-theme-dinky 
 
+# Navigation menu
+nav:
+  - name: "Home"
+    link: /
+  - name: "Docs"
+    link: /samples/
+  - name: "About"
+    link: /about/
+
