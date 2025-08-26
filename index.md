@@ -11,6 +11,7 @@ Here you can find samples of my writing for different SaaS companies.
 - [Step-by-Step Guide: BYOK Integration with Azure Key Vault](samples/byok-integration-with-azure-key-vault.md)
 
 **Tutorials**
+- [Enable automatic replies when Users are out of office](samples/enable-automatic-replies.md)
 - [Create a Scheduled Report](samples/create-a-scheduled-report.md)
   
 **Explanation** 
