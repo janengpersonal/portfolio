@@ -6,8 +6,8 @@ This document highlights features that are currently supported in Signal Governe
 |------|-------------|
 | ✅| Support |
 | ❌| Currently not supported |
-| ⚠️| Supported but with known issue/limitation |  |
-| N/A | Not available due to channel limitations |
+| ⚠️| Supported but with known issue/limitation | 
+| N/A | Not available due to channel limitations|
 
 ---
 
