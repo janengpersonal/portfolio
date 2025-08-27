@@ -10,6 +10,7 @@ Here you can find samples of my writing for different SaaS companies.
 **How-to**
 - [Step-by-Step Guide: BYOK Integration with Azure Key Vault](samples/byok-integration-with-azure-key-vault.md)
 - [Self-Onboarding iMessage Native for Managed Apple ID with Okta (Email and Password and Okta Verify Push authentication method)](samples/imessage-native-self-onboarding.md)
+- [WeChat MiniApp - Configure the client onboarding flow with SMS](samples/we-chat-client-onboarding-with-sms.md)
 
 **Tutorials**
 - [Enable automatic replies when Users are out of office](samples/enable-automatic-replies.md)
