@@ -75,7 +75,7 @@ This document highlights features that are currently supported in Telegram Nativ
 
 Feature                                                   | Telegram |
 -----------------------------------------------------------|----------|
- Audit log     | ✅ Supported 
+| Audit log     | ✅ Supported 
 | Activate messaging identity  (Leap Work web/mobile)                             | ✅ Supported |
 Deactivate messaging identity (Leap Work web/mobile)                            | ✅ Supported |
 Promote/Demote Client to AM (Leap Work web/mobile)                               | ✅ Supported |
