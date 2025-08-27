@@ -64,7 +64,6 @@ The report is sent via email and includes the total messages sent and received b
 5. Select the interval (LeapXpert supports following intervals). ![Alt text](photos/usage-report02.png) 
 6. Click **Next** to proceed.  
 7. Enter recipients' names, then click **Create**. ![Alt text](photos/usage-report03.png)  
-
 You have successfully created a Usage report per room for the Governed channel.  
 For more information, also see **Create a report schedule**.  
 
@@ -75,5 +74,4 @@ For more information, also see **Create a report schedule**.
 For MCP mode, if a Federal Identity (phone number) is unlinked and re-linked to a different client profile, the following will occur:  
 - The room is not included in the report if the re-linked profile is the only client in the room.  
 - Messages from that Federal Identity are not counted as "Received by user" if the room contains other clients besides the re-linked profile.  
-
 > **Note:** This applies to both 1-1 chats and group chats.  
