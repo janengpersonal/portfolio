@@ -15,6 +15,7 @@ Here you can find samples of my writing for different SaaS companies.
 - [Enable automatic replies when Users are out of office](samples/enable-automatic-replies.md)
 - [Create a Scheduled Report](samples/create-a-scheduled-report.md)
 - [Sync Contacts from Outlook](samples/sync-contact-from-outlook.md)
+- [Usage report per room for Governed channels](samples/usage-report-per-room-for-governed-channels.md)
   
 **Explanation** 
 - [About External Companies](samples/about-external-companies.md)
