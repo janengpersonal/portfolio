@@ -24,4 +24,5 @@ Here you can find samples of my writing for different SaaS companies.
 **Reference**
 - [List of Feature Configurations](samples/list-of-feature-configurations.md)
 - [Signal Governed integration functionalities](samples/signal-governed-integration-functionalities.md)
+- [Telegram Native integration functionalities](samples/telegram-native-integration-functionalities.md)
 
