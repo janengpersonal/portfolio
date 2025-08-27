@@ -45,7 +45,6 @@ The import logic is described as below:
   - The previous phone number or email address is used to integrate channels.
   - The change is an empty phone number or email address. This helps prevent the data loss.
 - When the user deletes a contact on Outlook, in the next import, those contacts are considered as **Deleted Contact**.  
-
 >**Note:**
 >- Although client profiles are deleted, they remain active on LeapXpert. We have an internal method to track those external deletion actions.
 >- Temporarily for 2.4.0 version, LeapXpert does not handle the Updated and Deleted Contact types.
@@ -53,7 +52,6 @@ The import logic is described as below:
 ---
 
 ## Sync contacts from Outlook: Step-by-step guide
-
 ### Create an Azure application on the Azure admin portal (For admins)
 1. Log in to [https://portal.azure.com/](https://portal.azure.com/)
 2. Search for "App Registrations" on the search bar
@@ -65,13 +63,11 @@ The import logic is described as below:
 
 6. After the app is created, go to **Manage > Authentication > Platform configurations > Add a platform > Single-page application**. ![Alt text](photos/outlook5.png)  
 7. Enter value `{WEB_URL}/teams-outlook-login` for Direct URIs.  ![Alt text](photos/outlook6.png)  
-
    *Please note that `{WEB_URL}` is the Leap Work  URL of the deployed environment. After entering the value, save the change.*
 8. In the **Manage** dropdown, select **API permissions**.
 9. Select **Microsoft Graph (1) > Delegated permissions**.
 10. On the Select permissions search bar, type "contacts".
 11. Tick **Contacts.Read** and click **Add permissions**. ![Alt text](photos/outlook7.png)  
-
 12. In the **Overview** section, get the Application (Client ID) and Directory (tenant) ID of this application, which will be used for the next step to configure the integration with LeapXpert. ![Alt text](photos/outlook8.png)  
 
 
@@ -88,7 +84,6 @@ The import logic is described as below:
 ### Sync contacts on Leap Work for Teams (For AM users)
 1. From Leap Work for Teams, AM users who can request ad hoc sync can see the **Outlook Sync** button. ![Alt text](photos/outlook11.png) 
 2. For the first sync, users need to log in with the account they use to log in Microsoft Teams. ![Alt text](photos/outlook12.png)  
-
    >**Note:** This step is to authenticate users.
 3. There is a prompt asking you to authorize the Azure app to read Outlook contacts.
 4. Once authorized, LeapXpert starts the sync process. ![Alt text](photos/outlook13.png)  
@@ -107,7 +102,6 @@ To sync Outlook contacts to Leap Work web, do as follows:
 1. Go to **Leap Work web > Contacts**.
 2. Click the **Sync** button. ![Alt text](photos/outlook15.png)  
 3. Once the sync process is done, you will receive a notification about a total number of contacts synced. ![Alt text](photos/outlook16.png)  
-
 >**Note:** If this is your first time syncing, all contacts will be imported. For later syncs, only contacts that have been added or updated since the last sync to when you click the button will be retrieved.
 
 ---
