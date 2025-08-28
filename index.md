@@ -33,5 +33,5 @@ Following the [Diataxis](https://diataxis.fr/) framework for technical documenta
 - [Telegram Native integration functionalities](samples/telegram-native-integration-functionalities.md)
 - 
 ## Kobiton
-- [Kobiton Docs]([url](https://docs.kobiton.com/))
+- [Kobiton Docs](https://docs.kobiton.com/)
 
