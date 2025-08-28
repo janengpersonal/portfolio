@@ -16,6 +16,7 @@ Following the [Diataxis]([url](https://diataxis.fr/)) framework for technical do
 - [Create a Scheduled Report](samples/create-a-scheduled-report.md)
 - [Sync Contacts from Outlook](samples/sync-contact-from-outlook.md)
 - [Usage report per room for Governed channels](samples/usage-report-per-room-for-governed-channels.md)
+- [Configuring Phone Number and OTP Input Restrictions in the WeChat MiniApp Onboarding Flow](samples/wechat-miniapp-otp-restriction-onboarding-flow.md)
   
 **Explanation** 
 - [About External Companies](samples/about-external-companies.md)
