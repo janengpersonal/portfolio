@@ -13,6 +13,7 @@ Following the [Diataxis]([url](https://diataxis.fr/)) framework for technical do
 
 **Tutorials**
 - [Enable automatic replies when Users are out of office](samples/enable-automatic-replies.md)
+- [Configure Provider-built app for WeCom Native integration](samples/wecom-native-configure-provider-build-app.md)
 - [Create a Scheduled Report](samples/create-a-scheduled-report.md)
 - [Sync Contacts from Outlook](samples/sync-contact-from-outlook.md)
 - [Usage report per room for Governed channels](samples/usage-report-per-room-for-governed-channels.md)
