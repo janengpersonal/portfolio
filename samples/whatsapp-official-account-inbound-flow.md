@@ -120,4 +120,4 @@ To get the QR code on Leap Work for Teams, do as follows:
 >- If there is no extension, the user cannot see the QR code on Leap Work.  
 >- If there is an issue with the WhatsApp Business Account, you will see the following screen.
 
-![Alt text](photos/inbound15.png)  
+![Alt text](photos/inbound15.png)
