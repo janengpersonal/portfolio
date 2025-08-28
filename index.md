@@ -31,5 +31,4 @@ Following the [Diataxis]([url](https://diataxis.fr/)) framework for technical do
 - [List of Feature Configurations](samples/list-of-feature-configurations.md)
 - [Signal Governed integration functionalities](samples/signal-governed-integration-functionalities.md)
 - [Telegram Native integration functionalities](samples/telegram-native-integration-functionalities.md)
-- [WhatsApp Native integration functionalities](samples/whatsapp-native-integration-functionalities.md)
 
